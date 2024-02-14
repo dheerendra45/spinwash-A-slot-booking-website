@@ -2,7 +2,7 @@ from django.contrib.auth import logout
 
 from django.shortcuts import render,redirect
 
-from .models import Complaint
+from .models import Complaint,CustomerBooking,HostelSlot
 from django.http import HttpResponseRedirect
 
 
@@ -13,7 +13,7 @@ def home(request):
 def index(request):
     return render(request,"index.html")
 def book(request):
-    return render(request,"book.html")
+    return render(request,"book1.html")
 def support(request):
     if request.method == 'POST':
         full_name = request.POST['full_name']

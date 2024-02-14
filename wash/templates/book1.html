@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Washing</title>
+   {% load static%}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="{%static 'w/style1.css'%}" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+        <div>
+        <ul class="navbar" id="nav1">
+
+            <li> <a  href="home" class="but">Home</a></li>
+            <li> <a href="support" class="but">Support</a></li>
+            <li> <a href="history" class="but">History</a></li>
+
+
+        </ul>
+         </div>
+
+
+<div class="fill">
+     <div class="formbold-form-wrapper">
+      <form action="https://formbold.com/s/FORM_ID" method="POST"><div style="font-size: 3.1rem;border-bottom: 3px solid #DDE3EC; padding:30px;"><center><b>Book Your Slot</b></center></div>
+
+        <div class="formbold-steps">
+            <ul>
+                <li class="formbold-step-menu1 active">
+                    <span>1</span>
+                    Details
+                </li>
+                <li class="formbold-step-menu2">
+                    <span>2</span>
+                    Slot
+                </li>
+                <li class="formbold-step-menu3">
+                    <span>3</span>
+                    Confirm
+                </li>
+            </ul>
+        </div>
+
+        <div class="formbold-form-step-1 active">
+          <div class="formbold-input-flex">
+            <div>
+                  <label for="dob" class="formbold-form-label"> Booking Date</label>
+                  <input
+                  type="date"
+                  name="dob"
+                  id="dob"
+                  class="formbold-form-input"
+                  />
+              </div>
+            <div>
+                <label for="hostel" class="formbold-form-label" > Hostel Name </label>
+                 <select class="formbold-form-input" id="hostel" name="hostel" >
+                     <option value="" disabled selected>Select your Hostel</option>
+    <option value="BH1">BH1</option>
+    <option value="BH2">BH2</option>
+    <option value="GH2">GH1</option>
+  </select>
+
+
+            </div>
+          </div>
+
+          <div class="formbold-input-flex">
+              <div>
+                  <label for="phone" class="formbold-form-label"> Mobile No. </label>
+                  <input
+                  type="phone"
+                  name="phone"
+                  id="phone"
+                  class="formbold-form-input"
+                  placeholder="+91"
+                  />
+              </div>
+              <div>
+                  <label for="email" class="formbold-form-label"> Email Address </label>
+                  <input
+                  type="email"
+                  name="email"
+                  placeholder="example@mail.com"
+                  id="email"
+                  class="formbold-form-input"
+                  />
+              </div>
+          </div></div>
+
+
+        <div class="formbold-form-step-2">
+
+             <div class="formbold-input-flex" id="timeflex">
+                  <div>
+                  <label for="Mno." class="formbold-form-label">Machine Number</label>
+                  <input
+                  type="number"
+                  name="Mno."
+                  id="Mno."
+                  class="formbold-form-input"
+                  />
+            </div>
+            <div>
+                  <label for="start" class="formbold-form-label"> Starting Time</label>
+                  <input
+                  type="time"
+                  name="start"
+                  id="start"
+                  class="formbold-form-input"
+                  />
+            </div>
+             <div>
+                  <label for="end" class="formbold-form-label"> Ending Time</label>
+                  <input
+                  type="time"
+                  name="end"
+                  id="end"
+                  class="formbold-form-input"
+                  />
+            </div>
+            </div>
+            <div class="formbold-input-flex" id="machine">
+                <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                   <img src="https://tinypic.host/images/2022/12/19/img_avatar.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Mohamed Yousef
+</h2>
+                            <div class="booked"id="bh1_M1">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>
+</div>
+
+
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                 <img src="https://tinypic.host/images/2022/12/19/img_avatar.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Mohamed Yousef
+</h2>
+                            <p class="booked slots" id="bh1_M2"></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                    <img src="https://tinypic.host/images/2022/12/19/img_avatar.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Mohamed Yousef
+</h2>
+                            <p class="booked slots" id="bh1_M3"></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                    <img src="https://tinypic.host/images/2022/12/19/img_avatar.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Mohamed Yousef
+</h2>
+                            <p class="booked slots" id="bh1_M4"></p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                    <img src="https://tinypic.host/images/2022/12/19/img_avatar.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Mohamed Yousef
+</h2>
+                            <p class="booked slots" id="bh1_M5"></p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+
+    <!-- Swiper JS -->
+   <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+      <!--Uncomment this line-->
+    <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script>
+            </div>
+        </div>
+
+        <div class="formbold-form-step-3">
+          <div class="formbold-form-confirm">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+            </p>
+
+
+          </div>
+        </div>
+
+        <div class="formbold-form-btn-wrapper">
+          <button class="formbold-back-btn">
+            Back
+          </button>
+
+          <button class="formbold-btn but">
+              Next Step
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1675_1807)">
+              <path d="M10.7814 7.33312L7.20541 3.75712L8.14808 2.81445L13.3334 7.99979L8.14808 13.1851L7.20541 12.2425L10.7814 8.66645H2.66675V7.33312H10.7814Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_1675_1807">
+              <rect width="16" height="16" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+          </button>
+        </div>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+<script>
+  const stepMenuOne = document.querySelector('.formbold-step-menu1')
+  const stepMenuTwo = document.querySelector('.formbold-step-menu2')
+  const stepMenuThree = document.querySelector('.formbold-step-menu3')
+
+  const stepOne = document.querySelector('.formbold-form-step-1')
+  const stepTwo = document.querySelector('.formbold-form-step-2')
+  const stepThree = document.querySelector('.formbold-form-step-3')
+
+  const formSubmitBtn = document.querySelector('.formbold-btn')
+  const formBackBtn = document.querySelector('.formbold-back-btn')
+
+  formSubmitBtn.addEventListener("click", function(event){
+    event.preventDefault()
+    if(stepMenuOne.className == 'formbold-step-menu1 active') {
+        event.preventDefault()
+
+        stepMenuOne.classList.remove('active')
+        stepMenuTwo.classList.add('active')
+
+        stepOne.classList.remove('active')
+        stepTwo.classList.add('active')
+
+        formBackBtn.classList.add('active')
+        formBackBtn.addEventListener("click", function (event) {
+          event.preventDefault()
+
+          stepMenuOne.classList.add('active')
+          stepMenuTwo.classList.remove('active')
+
+          stepOne.classList.add('active')
+          stepTwo.classList.remove('active')
+
+          formBackBtn.classList.remove('active')
+
+        })
+
+      } else if(stepMenuTwo.className == 'formbold-step-menu2 active') {
+        event.preventDefault()
+
+        stepMenuTwo.classList.remove('active')
+        stepMenuThree.classList.add('active')
+
+        stepTwo.classList.remove('active')
+        stepThree.classList.add('active')
+
+        formBackBtn.classList.remove('active')
+        formSubmitBtn.textContent = 'Submit'
+      } else if(stepMenuThree.className == 'formbold-step-menu3 active') {
+        document.querySelector('form').submit()
+      }
+  })
+
+
+
+</script>
+<script>var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints:{
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
+    },
+  });
+</script>
+</body>
+</html>
